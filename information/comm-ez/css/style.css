@@ -1,0 +1,35 @@
+header  *{
+    border: 1px solid goldenrod;
+}
+
+.carousel *{
+    border: 1px solid red;
+}
+main * {
+    border: 1px solid blue;
+    background-color: #fff;
+}
+
+footer *{
+    border: 1px solid greenyellow;
+}
+body{
+    background: repeating-linear-gradient(-75deg,#eed560, #eed560 10%, #b12b1c 10%, #b12b1c 30%,#b83613 30%, #b83613 60%,#448f2d 60%, #448f2d 90%,#274a16 90%, #274a16 100%);
+}
+
+/* header */
+.logo {
+    font-size: 32px;
+}
+.subtitle{
+    font-size: 20px;
+}
+/* carousel */
+.carousel-inner{
+    height: 400px;
+}
+ul li{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    }
