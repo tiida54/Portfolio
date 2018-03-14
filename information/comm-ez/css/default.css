@@ -317,3 +317,9 @@ html {
 ul li {
   list-style-type: none;
   margin: 0px; }
+
+a {
+  color: white; }
+  a:hover, a:focus, a:active, a.active {
+    color: #8fd0f0;
+    text-decoration: none; }

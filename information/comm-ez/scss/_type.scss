@@ -18,6 +18,11 @@
     text-overflow: ellipsis;
     // width: 200px;
 }
+@mixin disabled{
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+}
 @mixin text-selection{
     background: aquamarine;
     color: black;
