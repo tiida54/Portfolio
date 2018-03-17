@@ -1,0 +1,26 @@
+// variable
+$width: 960px;
+$primary-color: #00cc99;
+$secondary-colors: #212121;
+$text-color: #00ffff;
+$link-color: #000;
+$link-color-hover:#fff;
+
+//字型
+$font-size: 16px; 
+$font-m: $font-size * 1;
+$font-l: $font-size * 1.2;
+$font-s: $font-size * 0.8;
+//字型間距
+$line-height:1.8;
+$letter-spacing-l:2.0px;
+$letter-spacing-s:1.2px;
+
+//Weights 粗體
+$font-weight-light:300;
+$font-weight-regular:400;
+$font-weight-bold:600;
+
+//Families 字型
+$font-family-text:source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-display:source-serif-pro, Georgia, 'Times New Roman', Times, serif;

@@ -1,0 +1,10 @@
+@mixin bg($img){ 
+    background: url("../img/#{$img}");
+    width: image-width("../img/#{$img}");
+    height: image-height("../img/#{$img}");
+  }
+@mixin bg-c($text-color,$bg-color){
+    background: $bg-color;
+    color: $text-color;
+    @content;
+  }

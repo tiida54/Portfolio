@@ -1,0 +1,10 @@
+@mixin link{  //連結樣式
+    &:link,&:visited{  
+      @content;
+    } 
+  } 
+  @mixin link-hover{ //被點擊後的樣式
+    &:hover, &:focus, &:active,&.active{
+      @content;
+    } 
+  } 
