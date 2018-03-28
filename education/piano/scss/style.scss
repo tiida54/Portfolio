@@ -1,0 +1,162 @@
+@import 'variable';
+@import 'mixin/_bg';
+@import 'mixin/_border-right';
+@import 'mixin/_centering';
+@import 'mixin/_hover';
+@import 'type';
+body {
+    // border: 1px solid red;
+    margin: 0 auto;
+    width: $width;
+    @include centering;
+
+}
+body:before{
+    background-image:linear-gradient(rgba(255, 255, 0, 0.02), rgba(255, 255, 0, 0.24)),
+    url(../img/piano-top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 314vh;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;/*-1 可以当背景*/
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+
+// header * {
+//     border: 1px solid goldenrod;
+// }
+
+// main * {
+    
+//     border: 1px solid blue;
+// }
+
+// footer * {
+//     border: 1px solid greenyellow;
+// }
+
+// -------------------------------------  
+//   header 
+// -------------------------------------
+
+/* header */
+
+header {
+    background-color: #fff;
+}
+
+.shape-separator {
+    position: relative;
+    height: 48px;
+    background: darken(goldenrod, 10%);;
+}
+.logo{
+@include centering;
+}
+
+.shape-separator::after {
+    content: '';
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjQxNCI+PHBhdGggZD0iTTEyIDEybDEyIDEySDBsMTItMTJ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    bottom: 0;
+}
+
+.sibling-fade li {
+    padding: 0 0.2rem;
+    transition: opacity 0.2s;
+}
+
+.sibling-fade:hover li a:not(:hover) {
+    opacity: 0.5;
+}
+
+// homepage-hero-module
+// .homepage-hero-module {
+//     border-right: none;
+//     border-left: none;
+//     position: relative;
+// }
+// .no-video .video-container video,
+// .touch .video-container video {
+//     display: none;
+// }
+// .no-video .video-container .poster,
+// .touch .video-container .poster {
+//     display: block !important;
+// }
+// .video-container {
+//     position: relative;
+//     bottom: 0%;
+//     left: 0%;
+//     height: 100%;
+//     width: 100%;
+//     overflow: hidden;
+//     background: #000;
+// }
+// .video-container .poster img {
+//     width: 100%;
+//     bottom: 0;
+//     position: absolute;
+// }
+// .video-container .filter {
+//     z-index: 100;
+//     position: absolute;
+//     background: rgba(0, 0, 0, 0.4);
+//     width: 100%;
+// }
+// .video-container video {
+//     position: absolute;
+//     z-index: 0;
+//     bottom: 0;
+// }
+// .video-container video.fillWidth {
+//     width: 100%;
+// }
+
+/* header-end */
+
+// -------------------------------------  
+//   main 
+// -------------------------------------
+
+/* main */
+main {
+    background-color: #fff;
+}
+main .contact{
+    
+    @include centering;
+}
+main .title, main .main-title{
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+}
+main .title{
+    margin-top:0; 
+}
+/* main-end */
+
+// -------------------------------------  
+//   footer 
+// -------------------------------------
+
+/* footer */
+
+footer {
+    background-color: #fcc;
+    @include centering;
+    text-align: center;
+    @include bg-c(white,#212121);
+}
+
+
+/* footer-end */

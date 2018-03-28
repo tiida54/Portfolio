@@ -1,0 +1,13 @@
+@mixin svg-icon($icon, $width, $height){
+    display: inline-block;
+    background-image: url(../img/#{$icon}.png);
+    background-image: none ,url(../img/#{$icon}.svg);
+    width: $width;
+    height: $height;
+}
+@mixin circle($width, $height){
+    border-radius: 50%;
+    width: $width;
+    height: $height;
+}
+
